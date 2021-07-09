@@ -49,7 +49,11 @@ table {
 
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
 }
+/* general styles */
 
 html, body {
     height: 100%;
@@ -66,6 +70,57 @@ p {
     line-height: 1.4;
 }
 
+a {
+    text-decoration:none;
+    color:#4f4f4f;
+}
+
+/*header*/
+nav{
+    width:60%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding:2%;
+    margin:0 auto;
+}
+.logo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.link{
+    width: 55%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 2%;
+}
+
+/*empty Section */
+.hero-img{
+    background-image:url('../img/jumbo.jpg');
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:25vh;
+    width:60%;
+    padding:2%;
+    margin:0 auto;
+}
+.hero-img2{
+    background-image:url('../img/jumbo-about.png');
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:25vh;
+    width:60%;
+    padding:2%;
+    margin: 0 auto;
+}
+
+/* middle content */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -85,6 +140,7 @@ p {
     padding-bottom: 20px;  
 }
 
+/* boxes */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -112,6 +168,38 @@ p {
     justify-content: center;
 }
 
+#Box1{
+    background-color:teal;
+}
+#Box2{
+    background-color:gold;
+}
+#Box3{
+    background-color:cadetblue;
+}
+#Box4{
+    background-color:coral;
+}
+#Box5{
+    background-color:crimson;
+}
+#Box6{
+    background-color:forestgreen;
+}
+#Box7{
+    background-color:darkorchid;
+}
+#Box8{
+    background-color:hotpink;
+}
+#Box9{
+    background-color:indigo;
+}
+#Box10{
+    background-color:dodgerblue;
+}
+
+/*bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +214,7 @@ p {
     padding-right: 0;
 }
 
+/* footer */
 footer {
     width: 100%;
     background: black;
@@ -143,4 +232,50 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*about html/about page*/
+.top-contentAbout {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+.top-content .text-containerAbout {
+    width: 60%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+/*middle content*/
+.container-about{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    padding:0 auto;
+    margin:5% auto;
+}
+.container-about2{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    padding:0 auto;
+    margin:5% auto;
+}
+.button{
+    background-color:#fff;
+    border-radius: 15%;
+    width:  30%;
+    padding:3%;
+    margin:3% auto;
+    text-align:center;
+}
+
+/*bottom content*/
+.together{
+    width: 60%;
+    padding:3%;
+    margin:0 auto;
 }
